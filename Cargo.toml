@@ -4,6 +4,10 @@ version = "0.1.0"
 authors = ["Ademar Alves de Oliveira <ademar111190@gmail.com>"]
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies.gtk]
+version = "0.8.1"
+features = ["v3_16"]
 
-[dependencies]
+[dependencies.gio]
+version = ""
+features = ["v2_44"]
