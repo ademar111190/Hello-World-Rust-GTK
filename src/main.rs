@@ -4,6 +4,7 @@ use home::show_home;
 
 mod app;
 mod home;
+mod team;
 
 fn main() {
     let app = build_app();
