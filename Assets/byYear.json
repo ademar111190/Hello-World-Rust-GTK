@@ -1,0 +1,644 @@
+{
+  "years": [
+    {
+      "year": 1902,
+      "champion": "São Paulo Athletic",
+      "runner_up": "Paulistano"
+    },
+    {
+      "year": 1903,
+      "champion": "São Paulo Athletic",
+      "runner_up": "Paulistano"
+    },
+    {
+      "year": 1904,
+      "champion": "São Paulo Athletic",
+      "runner_up": "Paulistano"
+    },
+    {
+      "year": 1905,
+      "champion": "Paulistano",
+      "runner_up": "Germânia"
+    },
+    {
+      "year": 1906,
+      "champion": "Germânia",
+      "runner_up": "S.C. Internacional"
+    },
+    {
+      "year": 1907,
+      "champion": "S.C. Internacional",
+      "runner_up": "Paulistano"
+    },
+    {
+      "year": 1908,
+      "champion": "Paulistano",
+      "runner_up": "Germânia"
+    },
+    {
+      "year": 1909,
+      "champion": "A.A. das Palmeiras",
+      "runner_up": "Paulistano"
+    },
+    {
+      "year": 1910,
+      "champion": "A.A. das Palmeiras",
+      "runner_up": "S.C. Americano"
+    },
+    {
+      "year": 1911,
+      "champion": "São Paulo Athletic",
+      "runner_up": "S.C. Americano"
+    },
+    {
+      "year": 1912,
+      "champion": "S.C. Americano",
+      "runner_up": "Paulistano"
+    },
+    {
+      "year": 1913,
+      "champion": "S.C. Americano",
+      "runner_up": "Ypiranga"
+    },
+    {
+      "year": 1913,
+      "champion": "Paulistano",
+      "runner_up": "Mackenzie"
+    },
+    {
+      "year": 1914,
+      "champion": "A.A. São Bento",
+      "runner_up": "Paulistano"
+    },
+    {
+      "year": 1914,
+      "champion": "Corinthians",
+      "runner_up": "Campos Elíseos"
+    },
+    {
+      "year": 1915,
+      "champion": "A.A. das Palmeiras",
+      "runner_up": "Mackenzie"
+    },
+    {
+      "year": 1915,
+      "champion": "Germânia",
+      "runner_up": "Campos Elíseos"
+    },
+    {
+      "year": 1916,
+      "champion": "Paulistano",
+      "runner_up": "A.A. São Bento"
+    },
+    {
+      "year": 1916,
+      "champion": "Corinthians",
+      "runner_up": "União Lapa"
+    },
+    {
+      "year": 1917,
+      "champion": "Paulistano",
+      "runner_up": "Palestra Itália"
+    },
+    {
+      "year": 1918,
+      "champion": "Paulistano",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 1919,
+      "champion": "Paulistano",
+      "runner_up": "Palestra Itália"
+    },
+    {
+      "year": 1920,
+      "champion": "Palestra Itália",
+      "runner_up": "Paulistano"
+    },
+    {
+      "year": 1921,
+      "champion": "Paulistano",
+      "runner_up": "Palestra Itália"
+    },
+    {
+      "year": 1922,
+      "champion": "Corinthians",
+      "runner_up": "Palestra Itália"
+    },
+    {
+      "year": 1923,
+      "champion": "Corinthians",
+      "runner_up": "Palestra Itália"
+    },
+    {
+      "year": 1924,
+      "champion": "Corinthians",
+      "runner_up": "Paulistano"
+    },
+    {
+      "year": 1925,
+      "champion": "A.A. São Bento",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 1926,
+      "champion": "Palestra Itália",
+      "runner_up": "Auto"
+    },
+    {
+      "year": 1926,
+      "champion": "Paulistano",
+      "runner_up": "Germânia"
+    },
+    {
+      "year": 1927,
+      "champion": "Palestra Itália",
+      "runner_up": "Santos"
+    },
+    {
+      "year": 1927,
+      "champion": "Paulistano",
+      "runner_up": "Hespanha"
+    },
+    {
+      "year": 1928,
+      "champion": "Corinthians",
+      "runner_up": "Santos"
+    },
+    {
+      "year": 1928,
+      "champion": "S.C. Internacional",
+      "runner_up": "Paulistano"
+    },
+    {
+      "year": 1929,
+      "champion": "Corinthians",
+      "runner_up": "Santos"
+    },
+    {
+      "year": 1929,
+      "champion": "Paulistano",
+      "runner_up": "Ponte Preta"
+    },
+    {
+      "year": 1930,
+      "champion": "Corinthians",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1931,
+      "champion": "São Paulo",
+      "runner_up": "Palestra Itália"
+    },
+    {
+      "year": 1932,
+      "champion": "Palestra Itália",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1933,
+      "champion": "Palestra Itália",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1934,
+      "champion": "Palestra Itália",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1935,
+      "champion": "Santos",
+      "runner_up": "Palestra Itália"
+    },
+    {
+      "year": 1935,
+      "champion": "Portuguesa",
+      "runner_up": "Ypiranga "
+    },
+    {
+      "year": 1936,
+      "champion": "Palestra Itália",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 1936,
+      "champion": "Portuguesa",
+      "runner_up": "Ypiranga"
+    },
+    {
+      "year": 1937,
+      "champion": "Corinthians",
+      "runner_up": "Palestra Itália"
+    },
+    {
+      "year": 1938,
+      "champion": "Corinthians",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1939,
+      "champion": "Corinthians",
+      "runner_up": "Palestra Itália"
+    },
+    {
+      "year": 1940,
+      "champion": "Palestra Itália",
+      "runner_up": "Portuguesa"
+    },
+    {
+      "year": 1941,
+      "champion": "Corinthians",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1942,
+      "champion": "Palmeiras",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 1943,
+      "champion": "São Paulo",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 1944,
+      "champion": "Palmeiras",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1945,
+      "champion": "São Paulo",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 1946,
+      "champion": "São Paulo",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 1947,
+      "champion": "Palmeiras",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 1948,
+      "champion": "São Paulo",
+      "runner_up": "Santos"
+    },
+    {
+      "year": 1949,
+      "champion": "São Paulo",
+      "runner_up": "Palmeiras"
+    },
+    {
+      "year": 1950,
+      "champion": "Palmeiras",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1951,
+      "champion": "Corinthians",
+      "runner_up": "Palmeiras"
+    },
+    {
+      "year": 1952,
+      "champion": "Corinthians",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1953,
+      "champion": "São Paulo",
+      "runner_up": "Palmeiras"
+    },
+    {
+      "year": 1954,
+      "champion": "Corinthians",
+      "runner_up": "Palmeiras"
+    },
+    {
+      "year": 1955,
+      "champion": "Santos",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 1956,
+      "champion": "Santos",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1957,
+      "champion": "São Paulo",
+      "runner_up": "Santos"
+    },
+    {
+      "year": 1958,
+      "champion": "Santos",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1959,
+      "champion": "Palmeiras",
+      "runner_up": "Santos"
+    },
+    {
+      "year": 1960,
+      "champion": "Santos",
+      "runner_up": "Portuguesa"
+    },
+    {
+      "year": 1961,
+      "champion": "Santos",
+      "runner_up": "Palmeiras"
+    },
+    {
+      "year": 1961,
+      "champion": "Santos",
+      "runner_up": "Corinthians & São Paulo"
+    },
+    {
+      "year": 1963,
+      "champion": "Palmeiras",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1964,
+      "champion": "Santos",
+      "runner_up": "Palmeiras"
+    },
+    {
+      "year": 1965,
+      "champion": "Santos",
+      "runner_up": "Palmeiras"
+    },
+    {
+      "year": 1966,
+      "champion": "Palmeiras",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 1967,
+      "champion": "Santos",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1968,
+      "champion": "Santos",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 1969,
+      "champion": "Santos",
+      "runner_up": "Palmeiras"
+    },
+    {
+      "year": 1970,
+      "champion": "São Paulo",
+      "runner_up": "Palmeiras & Ponte Preta"
+    },
+    {
+      "year": 1971,
+      "champion": "São Paulo",
+      "runner_up": "Palmeiras"
+    },
+    {
+      "year": 1972,
+      "champion": "Palmeiras",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1973,
+      "champion": "Santos & Portuguesa",
+      "runner_up": "Palmeiras"
+    },
+    {
+      "year": 1974,
+      "champion": "Palmeiras",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 1975,
+      "champion": "São Paulo",
+      "runner_up": "Portuguesa"
+    },
+    {
+      "year": 1976,
+      "champion": "Palmeiras",
+      "runner_up": "XV de Piracicaba"
+    },
+    {
+      "year": 1977,
+      "champion": "Corinthians",
+      "runner_up": "Ponte Preta"
+    },
+    {
+      "year": 1978,
+      "champion": "Santos",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1979,
+      "champion": "Corinthians",
+      "runner_up": "Ponte Preta"
+    },
+    {
+      "year": 1980,
+      "champion": "São Paulo",
+      "runner_up": "Santos"
+    },
+    {
+      "year": 1981,
+      "champion": "São Paulo",
+      "runner_up": "Ponte Preta"
+    },
+    {
+      "year": 1982,
+      "champion": "Corinthians",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1983,
+      "champion": "Corinthians",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1984,
+      "champion": "Santos",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 1985,
+      "champion": "São Paulo",
+      "runner_up": "Portuguesa"
+    },
+    {
+      "year": 1986,
+      "champion": "Inter de Limeira",
+      "runner_up": "Palmeiras"
+    },
+    {
+      "year": 1987,
+      "champion": "São Paulo",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 1988,
+      "champion": "Corinthians",
+      "runner_up": "Guarani"
+    },
+    {
+      "year": 1989,
+      "champion": "São Paulo",
+      "runner_up": "São José-SP"
+    },
+    {
+      "year": 1990,
+      "champion": "Bragantino",
+      "runner_up": "Novorizontino"
+    },
+    {
+      "year": 1991,
+      "champion": "São Paulo",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 1992,
+      "champion": "São Paulo",
+      "runner_up": "Palmeiras"
+    },
+    {
+      "year": 1993,
+      "champion": "Palmeiras",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 1994,
+      "champion": "Palmeiras",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1995,
+      "champion": "Corinthians",
+      "runner_up": "Palmeiras"
+    },
+    {
+      "year": 1996,
+      "champion": "Palmeiras",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1997,
+      "champion": "Corinthians",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 1998,
+      "champion": "São Paulo",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 1999,
+      "champion": "Corinthians",
+      "runner_up": "Palmeiras"
+    },
+    {
+      "year": 2000,
+      "champion": "São Paulo",
+      "runner_up": "Santos"
+    },
+    {
+      "year": 2001,
+      "champion": "Corinthians",
+      "runner_up": "Botafogo-SP"
+    },
+    {
+      "year": 2002,
+      "champion": "Ituano",
+      "runner_up": "União São João"
+    },
+    {
+      "year": 2003,
+      "champion": "Corinthians",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 2004,
+      "champion": "São Caetano",
+      "runner_up": "Paulista"
+    },
+    {
+      "year": 2005,
+      "champion": "São Paulo",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 2006,
+      "champion": "Santos",
+      "runner_up": "São Paulo"
+    },
+    {
+      "year": 2007,
+      "champion": "Santos",
+      "runner_up": "São Caetano"
+    },
+    {
+      "year": 2008,
+      "champion": "Palmeiras",
+      "runner_up": "Ponte Preta"
+    },
+    {
+      "year": 2009,
+      "champion": "Corinthians",
+      "runner_up": "Santos"
+    },
+    {
+      "year": 2010,
+      "champion": "Santos",
+      "runner_up": "Santo André"
+    },
+    {
+      "year": 2011,
+      "champion": "Santos",
+      "runner_up": "Corinthians"
+    },
+    {
+      "year": 2012,
+      "champion": "Santos",
+      "runner_up": "Guarani"
+    },
+    {
+      "year": 2013,
+      "champion": "Corinthians",
+      "runner_up": "Santos"
+    },
+    {
+      "year": 2014,
+      "champion": "Ituano",
+      "runner_up": "Santos"
+    },
+    {
+      "year": 2015,
+      "champion": "Santos",
+      "runner_up": "Palmeiras"
+    },
+    {
+      "year": 2016,
+      "champion": "Santos",
+      "runner_up": "Audax"
+    },
+    {
+      "year": 2017,
+      "champion": "Corinthians",
+      "runner_up": "Ponte Preta"
+    },
+    {
+      "year": 2018,
+      "champion": "Corinthians",
+      "runner_up": "Palmeiras"
+    },
+    {
+      "year": 2019,
+      "champion": "Corinthians",
+      "runner_up": "São Paulo"
+    }
+  ]
+}
