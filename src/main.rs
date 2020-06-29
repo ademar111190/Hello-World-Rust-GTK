@@ -1,9 +1,8 @@
 use app::build_app;
 use app::run_app;
-use home::show_home;
+use ui::home::show_home;
 
 mod app;
-mod home;
 mod data;
 mod ui;
 
