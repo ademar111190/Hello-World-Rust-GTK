@@ -5,6 +5,7 @@ use ui::home::show_home;
 mod app;
 mod data;
 mod ui;
+mod widget;
 
 fn main() {
     let app = build_app();
