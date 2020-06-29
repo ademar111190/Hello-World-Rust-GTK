@@ -4,9 +4,8 @@ use home::show_home;
 
 mod app;
 mod home;
-mod strings;
-mod team;
-mod year;
+mod data;
+mod ui;
 
 fn main() {
     let app = build_app();

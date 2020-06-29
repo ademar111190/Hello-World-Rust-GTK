@@ -5,8 +5,8 @@ use gio::prelude::*;
 use gtk::{Application, ApplicationWindow, WindowPosition};
 use gtk::prelude::*;
 
-use crate::strings::get_string;
-use crate::strings::StringId::HomeTitle;
+use crate::data::strings::get_string;
+use crate::data::strings::StringId::HomeTitle;
 
 use self::gtk::Label;
 

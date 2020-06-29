@@ -21,7 +21,7 @@ pub fn build_teams_payload(json: &str) -> TeamsPayload {
 
 #[cfg(test)]
 mod test {
-    use crate::team::{build_teams_payload, Team, TeamsPayload};
+    use crate::data::team::{build_teams_payload, Team, TeamsPayload};
 
     #[test]
     fn json_complete() {

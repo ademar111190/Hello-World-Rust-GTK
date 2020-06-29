@@ -19,7 +19,7 @@ pub fn build_years_payload(json: &str) -> YearsPayload {
 
 #[cfg(test)]
 mod test {
-    use crate::year::{build_years_payload, Year, YearsPayload};
+    use crate::data::year::{build_years_payload, Year, YearsPayload};
 
     #[test]
     fn json_complete() {
