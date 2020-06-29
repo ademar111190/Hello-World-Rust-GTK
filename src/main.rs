@@ -4,6 +4,7 @@ use home::show_home;
 
 mod app;
 mod home;
+mod strings;
 mod team;
 mod year;
 
