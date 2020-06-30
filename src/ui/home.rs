@@ -24,7 +24,7 @@ pub fn show_home(app: &Application) {
         add_actions(&app, &window);
         window.set_decorated(true);
         window.set_title(&get_string(HomeTitle));
-        window.set_default_size(500, 800);
+        window.set_default_size(400, 600);
         window.set_position(Center);
         window.add(&root.widget);
         window.show_all();
