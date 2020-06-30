@@ -1,5 +1,6 @@
 [package]
-name = "hello-world"
+name = "hello-world-rust-gtk"
+description = "A hello world using gtk in rust"
 version = "0.1.0"
 authors = ["Ademar Alves de Oliveira <ademar111190@gmail.com>"]
 edition = "2018"

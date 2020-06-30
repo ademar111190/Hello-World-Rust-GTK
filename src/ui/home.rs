@@ -22,7 +22,7 @@ pub fn show_home(app: &Application) {
 
         let window = ApplicationWindow::new(app);
         add_actions(&app, &window);
-        window.set_decorated(false);
+        window.set_decorated(true);
         window.set_title(&get_string(HomeTitle));
         window.set_default_size(500, 800);
         window.set_position(Center);
