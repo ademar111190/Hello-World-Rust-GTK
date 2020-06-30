@@ -1,3 +1,4 @@
+use app::add_menus;
 use app::build_app;
 use app::run_app;
 use css::load_css;
@@ -12,6 +13,7 @@ mod widget;
 fn main() {
     let app = build_app();
     load_css();
+    add_menus(&app);
     show_home(&app);
     run_app(&app);
 }

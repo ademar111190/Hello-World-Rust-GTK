@@ -1,11 +1,14 @@
 [package]
-name = "hello-world-rust-gtk"
+name = "hello-world"
 version = "0.1.0"
 authors = ["Ademar Alves de Oliveira <ademar111190@gmail.com>"]
 edition = "2018"
 
 [dependencies.gdk]
 version = "0.12.1"
+
+[dependencies.glib]
+version = "0.9.3"
 
 [dependencies.gtk]
 version = "0.8.1"
