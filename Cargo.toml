@@ -4,13 +4,16 @@ version = "0.1.0"
 authors = ["Ademar Alves de Oliveira <ademar111190@gmail.com>"]
 edition = "2018"
 
-[dependencies.gio]
-version = ""
-features = ["v2_44"]
+[dependencies.gdk]
+version = "0.12.1"
 
 [dependencies.gtk]
 version = "0.8.1"
 features = ["v3_16"]
+
+[dependencies.gio]
+version = ""
+features = ["v2_44"]
 
 [dependencies.serde]
 version = "1.0"

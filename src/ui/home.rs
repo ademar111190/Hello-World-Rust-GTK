@@ -6,6 +6,7 @@ use gtk::{Application, ApplicationWindow};
 use gtk::prelude::*;
 use gtk::WindowPosition::Center;
 
+use crate::css::{apply_style, Style};
 use crate::data::strings::get_string;
 use crate::data::strings::StringId::HomeLoading;
 use crate::data::strings::StringId::HomeTitle;
@@ -16,8 +17,10 @@ pub fn show_home(app: &Application) {
     app.connect_activate(|app| {
         let loading = Loading::new(get_string(HomeLoading));
         let root = CenterBox::new(loading.widget);
+        apply_style(&root.widget, Style::Window);
 
         let window = ApplicationWindow::new(app);
+        window.set_decorated(true);
         window.set_title(&get_string(HomeTitle));
         window.set_default_size(500, 800);
         window.set_position(Center);
