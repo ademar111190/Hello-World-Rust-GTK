@@ -34,19 +34,36 @@ pub fn apply_style<T: WidgetExt>(widget: &T, style: Style) {
 }
 
 const STYLE: &str = "
-.window {
-    background-color: #212121;
-}
-
 .loadingLabel {
     font-size: 22px;
-    color: #C5E1A5;
+    color: #90A4AE;
 }
 
 .loadingSpinner {
     min-width: 32px;
     min-height: 32px;
     margin: 4px;
-    color: #C5E1A5;
+    color: #90A4AE;
+}
+
+button {
+    color: #78909C;
+    background: #263238;
+    border: 1px solid #424242;
+    box-shadow: none;
+    font-size: 14px;
+    text-shadow: 0 1px rgba(97, 97, 97, 0.9);
+}
+button:active {
+    color: #B0BEC5;
+    background: #37474F;
+}
+button:checked {
+    box-shadow: inset 0 1px rgba(97, 97, 97, 0.9);
+    text-shadow: none;
+}
+
+.window {
+    background-color: #212121;
 }
 ";
