@@ -5,7 +5,7 @@ use std::fs::File;
 use std::io::Read;
 use std::thread;
 
-use gtk::Box;
+use gtk::{Box, Orientation};
 
 use crate::data::strings::get_string;
 use crate::data::strings::StringId::{HomeLoading, StackYear};
@@ -21,7 +21,7 @@ pub struct ByYear {
 
 pub fn build_by_year() -> ByYear {
     let loading = Loading::new(get_string(HomeLoading));
-    let root = CenterBox::new(loading.widget);
+    let root = CenterBox::new(loading.widget, Orientation::Vertical);
 
     thread::spawn(|| {
         read_json();
@@ -36,9 +36,10 @@ pub fn build_by_year() -> ByYear {
 
 fn read_json() {
     let mut file = File::open("assets/byTeam.json")
-        .expect("Failed to read the byTeam.json file");
+        .expect("Failed to open the byTeam.json file");
     let mut json = String::new();
-    file.read_to_string(&mut json);
+    file.read_to_string(&mut json)
+        .expect("Failed to read the byTeam.json content");
     let teams_payload = build_teams_payload(&json);
     println!("> {:?}", teams_payload);
 }

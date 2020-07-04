@@ -21,14 +21,12 @@ pub fn load_css() {
 pub enum Style {
     LoadingLabel,
     LoadingSpinner,
-    Window,
 }
 
 pub fn apply_style<T: WidgetExt>(widget: &T, style: Style) {
     let class_name = match style {
         Style::LoadingLabel => "loadingLabel",
         Style::LoadingSpinner => "loadingSpinner",
-        Style::Window => "window",
     };
     widget.get_style_context().add_class(class_name);
 }
@@ -36,34 +34,15 @@ pub fn apply_style<T: WidgetExt>(widget: &T, style: Style) {
 const STYLE: &str = "
 .loadingLabel {
     font-size: 22px;
-    color: #90A4AE;
 }
 
 .loadingSpinner {
     min-width: 32px;
     min-height: 32px;
     margin: 4px;
-    color: #90A4AE;
 }
 
 button {
-    color: #78909C;
-    background: #263238;
-    border: 1px solid #424242;
-    box-shadow: none;
     font-size: 14px;
-    text-shadow: 0 1px rgba(97, 97, 97, 0.9);
-}
-button:active {
-    color: #B0BEC5;
-    background: #37474F;
-}
-button:checked {
-    box-shadow: inset 0 1px rgba(97, 97, 97, 0.9);
-    text-shadow: none;
-}
-
-.window {
-    background-color: #212121;
 }
 ";

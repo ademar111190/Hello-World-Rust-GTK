@@ -1,7 +1,7 @@
 extern crate gio;
 extern crate gtk;
 
-use gtk::Box;
+use gtk::{Box, Orientation};
 
 use crate::data::strings::get_string;
 use crate::data::strings::StringId::{HomeLoading, StackClub};
@@ -16,7 +16,7 @@ pub struct ByTeam {
 
 pub fn build_by_team() -> ByTeam {
     let loading = Loading::new(get_string(HomeLoading));
-    let root = CenterBox::new(loading.widget);
+    let root = CenterBox::new(loading.widget, Orientation::Vertical);
     return ByTeam {
         widget: root.widget,
         tag: String::from("StackClub"),

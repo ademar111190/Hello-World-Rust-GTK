@@ -11,6 +11,7 @@ mod ui;
 mod widget;
 
 fn main() {
+    gtk::init().expect("Failed to init GTK");
     let app = build_app();
     load_css();
     add_menus(&app);
