@@ -14,9 +14,11 @@ pub struct TeamsPayload {
     teams: Vec<Team>
 }
 
-pub fn build_teams_payload(json: &str) -> TeamsPayload {
-    serde_json::from_str(json)
-        .expect(&format!("TeamsPayload cannot be build with the given json: {}", json))
+pub fn build_teams_payload(json: &str) -> Result<TeamsPayload, String> {
+    return serde_json::from_str(json)
+        .map_err(|_| -> String {
+            String::from("Falha no carregamento do arquivo de dados")
+        });
 }
 
 #[cfg(test)]
@@ -35,7 +37,7 @@ mod test {
                     "runner_up_years": [1888, 2020]
                 }]
             }"#),
-            TeamsPayload {
+            Ok(TeamsPayload {
                 teams: vec![
                     Team {
                         name: String::from("A team"),
@@ -45,7 +47,7 @@ mod test {
                         runner_up_years: vec![1888, 2020],
                     }
                 ]
-            }
+            })
         );
     }
 
@@ -61,7 +63,7 @@ mod test {
                     "runner_up_years": []
                 }]
             }"#),
-            TeamsPayload {
+            Ok(TeamsPayload {
                 teams: vec![
                     Team {
                         name: String::from("A team"),
@@ -71,73 +73,83 @@ mod test {
                         runner_up_years: vec![],
                     }
                 ]
-            }
+            })
         );
     }
 
     #[test]
-    #[should_panic]
     fn json_missing_name() {
-        build_teams_payload(r#"{
-            "teams": [{
-                "titles": 1,
-                "runner_ups": 2,
-                "title_years": [1990],
-                "runner_up_years": [1888, 2020]
-            }]
-        }"#);
+        assert_eq!(
+            build_teams_payload(r#"{
+                "teams": [{
+                    "titles": 1,
+                    "runner_ups": 2,
+                    "title_years": [1990],
+                    "runner_up_years": [1888, 2020]
+                }]
+            }"#),
+            Err(String::from("Falha no carregamento do arquivo de dados"))
+        );
     }
 
     #[test]
-    #[should_panic]
     fn json_missing_titles() {
-        build_teams_payload(r#"{
-            "teams": [{
-                "name": "A team",
-                "runner_ups": 2,
-                "title_years": [1990],
-                "runner_up_years": [1888, 2020]
-            }]
-        }"#);
+        assert_eq!(
+            build_teams_payload(r#"{
+                "teams": [{
+                    "name": "A team",
+                    "runner_ups": 2,
+                    "title_years": [1990],
+                    "runner_up_years": [1888, 2020]
+                }]
+            }"#),
+            Err(String::from("Falha no carregamento do arquivo de dados"))
+        );
     }
 
     #[test]
-    #[should_panic]
     fn json_missing_runner_ups() {
-        build_teams_payload(r#"{
-            "teams": [{
-                "name": "A team",
-                "titles": 1,
-                "title_years": [1990],
-                "runner_up_years": [1888, 2020]
-            }]
-        }"#);
+        assert_eq!(
+            build_teams_payload(r#"{
+                "teams": [{
+                    "name": "A team",
+                    "titles": 1,
+                    "title_years": [1990],
+                    "runner_up_years": [1888, 2020]
+                }]
+            }"#),
+            Err(String::from("Falha no carregamento do arquivo de dados"))
+        );
     }
 
     #[test]
-    #[should_panic]
     fn json_missing_title_years() {
-        build_teams_payload(r#"{
-            "teams": [{
-                "name": "A team",
-                "titles": 1,
-                "runner_ups": 2,
-                "runner_up_years": [1888, 2020]
-            }]
-        }"#);
+        assert_eq!(
+            build_teams_payload(r#"{
+                "teams": [{
+                    "name": "A team",
+                    "titles": 1,
+                    "runner_ups": 2,
+                    "runner_up_years": [1888, 2020]
+                }]
+            }"#),
+            Err(String::from("Falha no carregamento do arquivo de dados"))
+        );
     }
 
     #[test]
-    #[should_panic]
     fn json_missing_runner_up_years() {
-        build_teams_payload(r#"{
-            "teams": [{
-                "name": "A team",
-                "titles": 1,
-                "runner_ups": 2,
-                "title_years": [1990]
-            }]
-        }"#);
+        assert_eq!(
+            build_teams_payload(r#"{
+                "teams": [{
+                    "name": "A team",
+                    "titles": 1,
+                    "runner_ups": 2,
+                    "title_years": [1990]
+                }]
+            }"#),
+            Err(String::from("Falha no carregamento do arquivo de dados"))
+        );
     }
 
     #[test]
@@ -146,15 +158,17 @@ mod test {
             build_teams_payload(r#"{
                 "teams": []
             }"#),
-            TeamsPayload {
+            Ok(TeamsPayload {
                 teams: Vec::new()
-            }
+            })
         );
     }
 
     #[test]
-    #[should_panic]
     fn json_invalid() {
-        build_teams_payload(r#"{}"#);
+        assert_eq!(
+            build_teams_payload(r#"{}"#),
+            Err(String::from("Falha no carregamento do arquivo de dados"))
+        );
     }
 }

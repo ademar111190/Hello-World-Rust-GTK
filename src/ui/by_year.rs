@@ -2,14 +2,14 @@ extern crate gio;
 extern crate gtk;
 
 use std::fs::File;
-use std::io::Read;
+use std::io::{ErrorKind, Read};
 use std::thread;
 
 use gtk::{Box, Orientation};
 
 use crate::data::strings::get_string;
 use crate::data::strings::StringId::{HomeLoading, StackYear};
-use crate::data::team::build_teams_payload;
+use crate::data::team::{build_teams_payload, TeamsPayload};
 use crate::widget::center_box::CenterBox;
 use crate::widget::loading::Loading;
 
@@ -24,7 +24,10 @@ pub fn build_by_year() -> ByYear {
     let root = CenterBox::new(loading.widget, Orientation::Vertical);
 
     thread::spawn(|| {
-        read_json();
+        match read_json() {
+            Ok(teams_payload) => show_teams_payload(teams_payload),
+            Err(error) => show_error(error),
+        }
     });
 
     return ByYear {
@@ -34,12 +37,30 @@ pub fn build_by_year() -> ByYear {
     };
 }
 
-fn read_json() {
-    let mut file = File::open("assets/byTeam.json")
-        .expect("Failed to open the byTeam.json file");
-    let mut json = String::new();
-    file.read_to_string(&mut json)
-        .expect("Failed to read the byTeam.json content");
-    let teams_payload = build_teams_payload(&json);
-    println!("> {:?}", teams_payload);
+fn show_error(error: String) {
+    println!("Error > {}", error);
+}
+
+fn show_teams_payload(teams_payload: TeamsPayload) {
+    println!("Success > {:?}", teams_payload);
+}
+
+fn read_json() -> Result<TeamsPayload, String> {
+    return File::open("assets/byTeam.json")
+        .map_err(|error| {
+            match error.kind() {
+                ErrorKind::NotFound => String::from("Aquivo de dados não encontrado"),
+                _ => String::from("Falha desconhecida ao acessar aquivo de dados"),
+            }
+        })
+        .and_then(|mut file: File| -> Result<String, String> {
+            let mut json = String::new();
+            return match file.read_to_string(&mut json) {
+                Ok(_) => Ok(json),
+                Err(error) => Err(format!("{:?}", error)),
+            };
+        })
+        .and_then(|json: String| -> Result<TeamsPayload, String> {
+            build_teams_payload(&json)
+        });
 }
