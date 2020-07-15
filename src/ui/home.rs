@@ -20,7 +20,7 @@ pub fn show_home(app: &Application) {
         let by_year = build_by_year();
 
         let stack = stack();
-        stack.add_titled(&by_team.widget, &by_team.tag, &by_team.title);
+        stack.add_titled(&by_team.root, &by_team.tag, &by_team.title);
         stack.add_titled(&by_year.widget, &by_year.tag, &by_year.title);
 
         let window = home_window(&app);
@@ -28,6 +28,13 @@ pub fn show_home(app: &Application) {
         window.set_titlebar(Some(&header_bar(&stack_switcher(&stack))));
         window.add(&stack);
         window.show_all();
+
+        println!("A");
+        by_team.run().iter().for_each(|state| {
+            println!("B {:?}", &state);
+            by_team.render(&state);
+        });
+        println!("C");
     });
 }
 
@@ -44,8 +51,8 @@ fn home_window(app: &Application) -> ApplicationWindow {
         .application(app)
         .decorated(true)
         .title(&get_string(HomeTitle))
-        .default_width(400)
-        .default_height(600)
+        .default_width(600)
+        .default_height(400)
         .window_position(Center)
         .build();
 }
