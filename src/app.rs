@@ -2,21 +2,19 @@ extern crate gio;
 extern crate glib;
 extern crate gtk;
 
+use gio::{ApplicationFlags, SimpleAction};
 use gio::prelude::*;
 use glib::clone;
-use gtk::Application;
+use gtk::{Application, ApplicationWindow};
 use gtk::prelude::*;
 
 use crate::data::strings::get_string;
 use crate::data::strings::StringId::Quit;
 
-use self::gio::SimpleAction;
-use self::gtk::ApplicationWindow;
-
 pub fn build_app() -> Application {
     return Application::new(
         Some("ademar.hello.world.rust.gtk"),
-        Default::default(),
+        ApplicationFlags::empty(),
     ).expect("failed to initialize GTK application");
 }
 

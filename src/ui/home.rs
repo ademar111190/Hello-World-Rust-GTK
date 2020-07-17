@@ -11,31 +11,42 @@ use gtk::WindowPosition::Center;
 use crate::app::add_actions;
 use crate::data::strings::get_string;
 use crate::data::strings::StringId::HomeTitle;
-use crate::ui::by_team::build_by_team;
-use crate::ui::by_year::build_by_year;
+use crate::ui::by_team::{build_by_team, ByTeam};
+use crate::ui::by_year::{build_by_year, ByYear};
 
-pub fn show_home(app: &Application) {
-    app.connect_activate(|app| {
-        let by_team = build_by_team();
-        let by_year = build_by_year();
+pub struct Home {
+    pub by_team: ByTeam,
+    pub by_year: ByYear,
+}
 
+impl Home {
+    pub fn will_run(&self, app: &Application) {
         let stack = stack();
-        stack.add_titled(&by_team.root, &by_team.tag, &by_team.title);
-        stack.add_titled(&by_year.widget, &by_year.tag, &by_year.title);
+        stack.add_titled(&self.by_team.root, &self.by_team.tag, &self.by_team.title);
+        stack.add_titled(&self.by_year.widget, &self.by_year.tag, &self.by_year.title);
 
         let window = home_window(&app);
         add_actions(&app, &window);
         window.set_titlebar(Some(&header_bar(&stack_switcher(&stack))));
         window.add(&stack);
         window.show_all();
+    }
 
+    pub fn did_run(&self) {
         println!("A");
-        by_team.run().iter().for_each(|state| {
+        self.by_team.run().iter().for_each(|state| {
             println!("B {:?}", &state);
-            by_team.render(&state);
+            self.by_team.render(&state);
         });
         println!("C");
-    });
+    }
+}
+
+pub fn build_home() -> Home {
+    return Home {
+        by_team: build_by_team(),
+        by_year: build_by_year(),
+    };
 }
 
 fn header_bar(switcher: &StackSwitcher) -> HeaderBar {
